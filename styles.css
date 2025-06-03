@@ -1,0 +1,358 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar a, .navbar button {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.navbar a:hover, .navbar button:hover {
+    background-color: #555;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+}
+
+/* Slideshow */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+/* Band Section */
+.band-section {
+    padding: 64px 0;
+    text-align: center;
+    max-width: 1200px; /* Increased for better fit */
+    margin: 0 auto;
+    width: 90%; /* Use more screen width */
+}
+
+.band-section h2 {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.band-section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.band-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.band-members div {
+    width: 30%;
+    margin-bottom: 32px;
+}
+
+.band-members img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+/* Tour Section */
+.tour-section {
+    background-color: #000;
+    color: white;
+    padding: 64px 0;
+    text-align: center;
+}
+
+.tour-section h2 {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.tour-dates {
+    max-width: 1200px; /* Increased for better fit */
+    margin: 0 auto;
+    width: 90%; /* Use more screen width */
+}
+
+.tour-list {
+    list-style: none;
+    padding: 0;
+    background-color: white;
+    color: #555;
+    margin-bottom: 32px;
+    border: 1px solid #ddd;
+}
+
+.tour-list li {
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tour-list li:last-child {
+    border-bottom: none;
+}
+
+.tour-list .sold-out {
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+
+.tour-list .remaining {
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+    padding: 4px 8px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.tour-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tour-item {
+    width: 32%;
+    margin-bottom: 32px;
+    background-color: white;
+    color: black;
+}
+
+.tour-item img {
+    width: 100%;
+    height: auto;
+}
+
+.tour-item div {
+    padding: 16px;
+}
+
+.tour-item p {
+    margin: 8px 0;
+}
+
+.tour-item button {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.tour-item button:hover {
+    background-color: #555;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 64px 0;
+    text-align: center;
+    max-width: 1200px; /* Increased for better fit */
+    margin: 0 auto;
+    width: 90%; /* Use more screen width */
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info, .contact-form {
+    width: 48%;
+}
+
+.contact-info i {
+    width: 30px;
+    text-align: center;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.modal-header {
+    background-color: #008080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-header .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-body input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.modal-body button {
+    background-color: #008080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.modal-body button:hover {
+    background-color: #006666;
+}
+
+.modal-body .close-btn {
+    background-color: #ff4444;
+}
+
+.modal-body .close-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Footer */
+footer {
+    background-color: #ddd;
+    padding: 32px;
+    text-align: center;
+}
+
+footer i {
+    font-size: 24px;
+    margin: 0 8px;
+    color: #000;
+}
+
+footer i:hover {
+    color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .band-members div, .tour-item, .contact-info, .contact-form {
+        width: 100%;
+    }
+
+    .navbar a, .navbar button {
+        display: block;
+        text-align: center;
+    }
+
+    .dropdown-content {
+        position: static;
+    }
+}
